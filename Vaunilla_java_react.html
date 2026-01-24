@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+</head>
+<body>
+    <button data-id="123">Me gusta</button>
+ <style>
+    button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    body{
+        background-color: black;
+    }
+    </style>
+    <script>
+        // 1. Selecionar o botão
+        const button = document.querySelector('button');
+
+        // 2. Adicionar o evento de clique
+        button.addEventListener('click', function() {
+            //recuperar id do atributo data-id
+            const id = button.getAttribute('data-id')
+           
+        
+
+        if(button.classList.contains('liked')){
+            button.classList.remove('liked');
+            button.innerText = 'Me gusta';
+        }else{
+            button.classList.add('liked');
+            button.innerText = 'Não gostei';
+        }
+    });
+    </script>
+ </body>
+ 
+</html>
