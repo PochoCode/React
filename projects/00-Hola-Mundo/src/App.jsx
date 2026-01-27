@@ -1,7 +1,19 @@
 export function App () {
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <article>
+            <header>
+                <img alt="imagem de Amanda Ribas" src="https://unavatar.io/onlyfans/amandaribas "/>  
+                <div>
+                    <strong>Amanda Ribas</strong>
+                    <span>@amandaribas</span>
+                </div>         
+            </header>
+
+            <aside>
+                <button>
+                    Seguir
+                </button>
+            </aside>
+        </article>
     )
 }
