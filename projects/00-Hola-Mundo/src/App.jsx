@@ -1,19 +1,12 @@
+import './App.css'
+import { TwitterFollowCard } from './TwitterFollowCard.jsx'
 export function App () {
     return (
-        <article>
-            <header>
-                <img alt="imagem de Amanda Ribas" src="https://unavatar.io/onlyfans/amandaribas "/>  
-                <div>
-                    <strong>Amanda Ribas</strong>
-                    <span>@amandaribas</span>
-                </div>         
-            </header>
+        <>
+     <TwitterFollowCard username="amandaribas" name="Amanda Ribas" isFollowing={false}/>
+     <TwitterFollowCard username="midudev" name="Miguel Ángel Durán" isFollowing={false}/>
+     <TwitterFollowCard username="pheralb" name="Pablo Hernandez" isFollowing={false}/>
 
-            <aside>
-                <button>
-                    Seguir
-                </button>
-            </aside>
-        </article>
+     </>
     )
 }
